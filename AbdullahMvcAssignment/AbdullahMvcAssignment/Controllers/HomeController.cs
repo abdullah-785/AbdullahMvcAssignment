@@ -14,7 +14,26 @@ namespace AbdullahMvcAssignment.Controllers
         }
 
         public IActionResult Index()
+
         {
+            //ViewBag.Message = "Login";
+            return View();
+        }
+
+        //, string email, string phone
+        //&& email == "abc@gmail.com" && phone == "03317688086"
+
+
+        public IActionResult form(string uname, string lname, string email, string phone)
+        {
+            if (uname == "Abdullah" && lname == "abc" && email == "abc@gmail.com" && phone == "0331")
+            {
+                ViewBag.Message = "Login Successfull";
+            }
+            else
+            {
+                ViewBag.Message = "Login failed";
+            }
             return View();
         }
 
