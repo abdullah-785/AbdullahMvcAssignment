@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AbdullahMvcAssignment</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AbdullahMvcAssignment.styles.css" asp-append-version="true" />
+
+    @*https://localhost:7070/Home/register*@
+    @*https://localhost:7070/Home/login*@
+
+
+    <style>
+        #menu-style{
+            padding: 0 1.5rem;
+        }
+        a:hover{
+            color: orange;
+        }
+        #logo{
+            border-radius: 50%;
+            margin-left: 4rem;
+            width: 6rem;
+            height: 6rem;
+        }
+        ul{
+            text-align: center;
+        }
+        .navbar-toggler{
+            background-color: white;
+        }
+        .login-btn{
+            background-color: orange;
+            padding: 0.4rem 2.5rem;
+            margin-top: -1rem;
+            border-radius: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-black border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="" asp-action="Index"><img id="logo" src="../images/logo.jpg" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" id="menu-style" asp-area="" asp-controller="Home" asp-action="Index">H O M E</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" id="menu-style" asp-area="" asp-controller="Home" asp-action="Index">H I G H T L I G H T S</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" id="menu-style" asp-area="" asp-controller="Home" asp-action="store">S T O R E</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" id="menu-style" asp-area="" asp-controller="Home" asp-action="Index">N E W S L E T T E R</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" id="menu-style" asp-area="" asp-controller="Home" asp-action="Index">P A R T N E R S H I P</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" id="menu-style" asp-area="" asp-controller="Home" asp-action="Index">C O N T A C T U S</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" id="menu-style" asp-area="" asp-controller="Home" asp-action="login"><button class="login-btn">Login</button> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,523 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    border: 1px solid white;
+}
+#logo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin: 1rem 6rem;
+    animation-name: animation1;
+    animation-duration: 2s;
+}
+
+.nav-bar-height {
+    position: sticky;
+    /*height: 17rem;*/
+}
+#main-menu ul li {
+    margin: 3rem 1.5rem;
+}
+    #main-menu ul li a:hover{
+        color: orange;
+    }
+
+    #main-menu ul a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+#home {
+    text-decoration: line-through;
+    text-decoration-color: orange;
+    text-decoration-thickness: 0.15rem;
+}
+/* ********************************Slider CSS**********
+****************************************************************** */
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* TOP PICS STYLING AREA */
+.box {
+    /* border: 1px solid white; */
+}
+
+.top-pic-1 img {
+    width: 100%;
+    height: 30rem;
+    animation-name: animation1;
+    animation-duration: 2s;
+}
+
+    .top-pic-1 img:hover {
+        width: 110%;
+        transition: 1s;
+    }
+
+.img-1, .img-2, .img-3, .img-4 {
+    position: relative;
+}
+
+.img-description {
+    position: absolute;
+    z-index: 1;
+    top: 18rem;
+    left: 1rem;
+}
+
+    .img-description label {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+.img-description label p {
+    text-align: justify;
+}
+
+/* hightlights STYLING SECTING */
+#hightlights {
+    /* border: 1px solid white; */
+}
+
+.video-container video {
+    width: 50rem;
+}
+
+.hightlights-paragh {
+    margin-top: 10rem;
+}
+
+    .hightlights-paragh p {
+        text-align: justify;
+    }
+
+.year-hl {
+    color: orange;
+}
+
+hr {
+    width: 15rem;
+    border: 1px solid orange;
+    margin-left: 2rem;
+}
+
+/* NEWSLETTER STYING AREA */
+.newsletter-container {
+    width: 75%;
+    height: 40rem;
+    background-color: #0b0a0a;
+    margin: auto;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+    .newsletter-container h1 {
+        margin-top: 3rem;
+        font-weight: bolder;
+    }
+
+    .newsletter-container p {
+        margin-top: 3rem;
+    }
+
+#radio-policy {
+    margin-top: 2rem;
+}
+
+.policy-class {
+    margin-left: 0.5rem;
+}
+
+.email-input {
+    margin-top: 2rem;
+}
+
+#email {
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.7rem 3rem;
+    text-align: center;
+    border-radius: 3rem;
+    background-color: #0b0a0a;
+    border-color: white;
+}
+
+.subscribe {
+    background-color: orange;
+    padding: 1rem 4.5rem;
+    border-radius: 3rem;
+}
+
+/* SOCIAL MEDIA LINKS STYLING */
+.social-media {
+    display: flex;
+    width: 20%;
+    margin: auto;
+    justify-content: center;
+}
+
+    .social-media div img {
+        width: 2rem;
+        height: 2rem;
+        margin: 0.7rem;
+    }
+
+.instagram-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+#brands {
+    max-width: 50%;
+}
+
+
+/* FOOTER STYLING AREA  */
+#contact-us {
+    width: 100%;
+}
+
+.contact-us-container {
+    width: 70%;
+    margin: auto;
+    background-color: #0b0a0a;
+    /* display: flex; */
+}
+
+.contact-heading h1, p {
+    text-align: center;
+}
+
+.contact-form-area {
+    margin-top: 3rem;
+}
+
+    .contact-form-area div {
+        display: flex;
+        justify-content: center;
+        margin: 0.6rem;
+    }
+
+        .contact-form-area div input {
+            padding: 0.3rem 1rem;
+            /* color: gray; */
+            width: 25rem;
+            background-color: transparent;
+            border: 1px solid white;
+            font-size: 1rem;
+            border-radius: 2rem;
+        }
+
+#message {
+    background-color: transparent;
+    width: 25rem;
+    border-radius: 2rem;
+    padding: 0.3rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.submit {
+    background-color: orange;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    margin-left: 42%;
+}
+
+
+
+
+@keyframes animation1 {
+    to {
+        padding: 0rem;
+    }
+
+    from {
+        padding: 10rem;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 320px) {
+    #main-menu {
+        display: none;
+    }
+
+    #logo {
+        margin-left: 1rem;
+    }
+
+    #hightlights {
+        border: none;
+    }
+
+    .hightlights-paragh {
+        margin-top: 0;
+    }
+
+        .hightlights-paragh h1 {
+            text-align: center;
+        }
+
+    .video-container video {
+        width: 10rem;
+        height: 5rem;
+    }
+
+    .newsletter-container {
+        width: 100%;
+    }
+
+    #email {
+        font-size: 1rem;
+    }
+
+    .subscribe {
+        font-size: 0.7rem;
+    }
+
+    hr {
+        margin: 0 0 3rem 0;
+    }
+
+    .brand-label {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 375px) {
+    #main-menu {
+        display: none;
+    }
+
+    #logo {
+        margin-left: 1rem;
+    }
+
+    #hightlights {
+        border: none;
+    }
+
+    .hightlights-paragh {
+        margin-top: 0;
+    }
+
+        .hightlights-paragh h1 {
+            text-align: center;
+        }
+
+    .video-container video {
+        width: 10rem;
+        height: 7rem;
+        margin: 3rem 0 0 0;
+    }
+
+    .newsletter-container {
+        width: 100%;
+    }
+
+    #email {
+        font-size: 1rem;
+    }
+
+    .subscribe {
+        font-size: 0.7rem;
+    }
+
+    hr {
+        margin: 0 0 3rem 0;
+    }
+
+    .brand-label {
+        font-size: 1rem;
+    }
+
+    .contact-us-container {
+        width: 100%;
+    }
+    .nav-toggle-button {
+        background-color: white;
+    }
+}
+
+@media (max-width: 425px) {
+    #main-menu {
+        display: none;
+    }
+
+    #logo {
+        margin-left: 1rem;
+    }
+
+    #hightlights {
+        border: none;
+    }
+
+    .hightlights-paragh {
+        margin-top: 0;
+    }
+
+        .hightlights-paragh h1 {
+            text-align: center;
+        }
+
+    .video-container video {
+        width: 25rem;
+        margin-top: 3rem;
+    }
+
+    .newsletter-container {
+        width: 100%;
+    }
+
+    #email {
+        font-size: 1rem;
+    }
+
+    .subscribe {
+        font-size: 0.7rem;
+    }
+
+    hr {
+        margin: 0 0 3rem 0;
+    }
+
+    .brand-label {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #hightlights {
+        border: none;
+    }
+
+    .hightlights-paragh {
+        margin-top: 0;
+    }
+
+        .hightlights-paragh h1 {
+            text-align: center;
+        }
+
+    .video-container video {
+        width: 22rem;
+        height: 13rem;
+    }
+
+    .newsletter-container {
+        width: 100%;
+    }
+
+    #email {
+        font-size: 1rem;
+    }
+
+    .subscribe {
+        font-size: 0.7rem;
+    }
+
+    hr {
+        margin: 0 0 3rem 0;
+    }
+
+    .brand-label {
+        font-size: 1rem;
+    }
+}
