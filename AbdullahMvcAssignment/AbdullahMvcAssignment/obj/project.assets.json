@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\abdbu\\OneDrive\\Documents\\University data\\6th semester\\Intro to web\\MVC\\Assignment\\AbdullahMvcAssignment\\AbdullahMvcAssignment\\AbdullahMvcAssignment.csproj",
+      "projectUniqueName": "C:\\Users\\abdbu\\OneDrive\\Documents\\Abdullah Project 038\\AbdullahMvcAssignment\\AbdullahMvcAssignment\\AbdullahMvcAssignment\\AbdullahMvcAssignment.csproj",
       "projectName": "AbdullahMvcAssignment",
-      "projectPath": "C:\\Users\\abdbu\\OneDrive\\Documents\\University data\\6th semester\\Intro to web\\MVC\\Assignment\\AbdullahMvcAssignment\\AbdullahMvcAssignment\\AbdullahMvcAssignment.csproj",
+      "projectPath": "C:\\Users\\abdbu\\OneDrive\\Documents\\Abdullah Project 038\\AbdullahMvcAssignment\\AbdullahMvcAssignment\\AbdullahMvcAssignment\\AbdullahMvcAssignment.csproj",
       "packagesPath": "C:\\Users\\abdbu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\abdbu\\OneDrive\\Documents\\University data\\6th semester\\Intro to web\\MVC\\Assignment\\AbdullahMvcAssignment\\AbdullahMvcAssignment\\obj\\",
+      "outputPath": "C:\\Users\\abdbu\\OneDrive\\Documents\\Abdullah Project 038\\AbdullahMvcAssignment\\AbdullahMvcAssignment\\AbdullahMvcAssignment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\abdbu\\AppData\\Roaming\\NuGet\\NuGet.Config",
