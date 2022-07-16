@@ -57,24 +57,19 @@ namespace AbdullahMvcAssignment.Controllers
 
         public IActionResult register()
         {
+
+            ViewBag.data = _dataDbContext.Login.ToList();
+
             return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> register(Login login)
         {
-            //if(username == "Abc" && password == "123")
-            //{
-              //  ViewBag.message = "Done";
-            //}
-            //else
-            //{
-              //  ViewBag.message = "Failed";
-            //}
             await _dataDbContext.AddAsync(login);
             await _dataDbContext.SaveChangesAsync();
-
             return RedirectToAction("Index");
+
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

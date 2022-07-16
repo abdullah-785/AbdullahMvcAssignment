@@ -62,7 +62,27 @@
   </div>
 </div>
 
-<h1>@ViewBag.message</h1>
+@*<h1>@ViewBag.message</h1>*@
+
+<table>
+    <tr>
+        <th>Username</th>
+        <th>Password</th>
+    </tr>
+
+    @foreach(var dt in ViewBag.data){
+    <tr>
+        <td>@dt.uname</td>
+        <td>@dt.upass</td>
+    </tr>
+
+
+    }
+
+</table>
+
+
+
 </body>
 
 </html>
